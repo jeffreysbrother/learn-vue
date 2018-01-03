@@ -4,7 +4,7 @@ To enable Vue Devtools, start a SimpleHTTPServer:
 
 This will create a new Vue instance, set the desired scope, and create a data object.
 
-```vue
+```js
 let app = new Vue({
 	el: '#root',
 	data: {
@@ -24,7 +24,7 @@ We will then have access to this data here (`v-model` is used specifically for f
 
 We can also specify an array:
 
-```vue
+```js
 let app = new Vue({
 	el: '#root',
 	data: {
@@ -43,7 +43,7 @@ And then use the `v-for` directive to iterate over the array, and the `v-text` d
 </div>
 ```
 
-```vue
+```
 el
 data
 methods
@@ -52,4 +52,4 @@ v-on:click="addName"
 v-on:keyUp="addName"
 ```
 
-Shorthand for *registering events*: replace `v-on:click="addName` with `@click="addName"`
+Shorthand for **registering events**: replace `v-on:click="addName` with `@click="addName"`
